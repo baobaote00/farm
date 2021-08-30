@@ -1,0 +1,11 @@
+{
+    "duahau": {
+        "truongthanh": "./img/duahau/truongthanh.png",
+        "hat": "./img/duahau/hat.png",
+        "caynon": "./img/duahau/caynon.png",
+        "thoigiantruongthanh": "10:00",
+        "thoigianthanhcaynon": "3:00",
+        "giatien": 300,
+        "giathuhoach": 400
+    }
+}

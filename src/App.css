@@ -37,6 +37,10 @@
     height: 100%;
 }
 
+.da-tuoi{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .cay{
     position: absolute;
     top: 0;

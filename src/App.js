@@ -1,6 +1,5 @@
 import background from './img/bg.png';
 import ruong from './img/ruong.png';
-import bap from './img/bap.jfif';
 import './app.css'
 
 function App() {
@@ -16,7 +15,7 @@ function App() {
         <img src={ruong} className="ruong-chil" alt="logo" />
         <div className="cay">
           <div className="day-ruong">
-            <div className="o-ruong"><img src={bap} className="cai-cay" alt="logo" /></div>
+            <div className="o-ruong da-tuoi"><img src={require('./img/hat.png').default} className="cai-cay" alt="logo" /></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
@@ -24,7 +23,7 @@ function App() {
             <div className="o-ruong"></div>
           </div>
           <div className="day-ruong">
-            <div className="o-ruong"><img src={bap} className="cai-cay" alt="logo" /></div>
+            <div className="o-ruong"><img src={require('./img/hat.png').default} className="cai-cay" alt="logo" /></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
@@ -33,7 +32,7 @@ function App() {
           </div>
           <div className="day-ruong">
             <div className="o-ruong"></div>
-            <div className="o-ruong"><img src={bap} className="cai-cay" alt="logo" /></div>
+            <div className="o-ruong"><img src={require('./img/hat.png').default} className="cai-cay" alt="logo" /></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
             <div className="o-ruong"></div>
