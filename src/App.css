@@ -35,10 +35,16 @@
 .o-ruong{
     width: 16.666667%;
     height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: relative;
 }
 
 .da-tuoi{
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
 }
 
 .cay{
@@ -52,6 +58,7 @@
 }
 
 .cai-cay{
-    width: 100%;
-    height: 100%;
+    width: 75%;
+    height: 75%;
+    position: relative;
 }
