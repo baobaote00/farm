@@ -5,7 +5,43 @@
         "caynon": "./img/duahau/caynon.png",
         "thoigiantruongthanh": "10:00",
         "thoigianthanhcaynon": "3:00",
-        "giatien": 300,
-        "giathuhoach": 400
+        "giatien": 3000,
+        "giathuhoach": 5000
+    },
+    "cachua": {
+        "truongthanh": "./img/duahau/truongthanh.png",
+        "hat": "./img/duahau/hat.png",
+        "caynon": "./img/duahau/caynon.png",
+        "thoigiantruongthanh": "10:00",
+        "thoigianthanhcaynon": "3:00",
+        "giatien": 3000,
+        "giathuhoach": 5000
+    },
+    "carot": {
+        "truongthanh": "./img/duahau/truongthanh.png",
+        "hat": "./img/duahau/hat.png",
+        "caynon": "./img/duahau/caynon.png",
+        "thoigiantruongthanh": "10:00",
+        "thoigianthanhcaynon": "3:00",
+        "giatien": 3000,
+        "giathuhoach": 5000
+    },
+    "khom": {
+        "truongthanh": "./img/duahau/truongthanh.png",
+        "hat": "./img/duahau/hat.png",
+        "caynon": "./img/duahau/caynon.png",
+        "thoigiantruongthanh": "10:00",
+        "thoigianthanhcaynon": "3:00",
+        "giatien": 3000,
+        "giathuhoach": 5000
+    },
+    "huongduong": {
+        "truongthanh": "./img/duahau/truongthanh.png",
+        "hat": "./img/duahau/hat.png",
+        "caynon": "./img/duahau/caynon.png",
+        "thoigiantruongthanh": "10:00",
+        "thoigianthanhcaynon": "3:00",
+        "giatien": 3000,
+        "giathuhoach": 5000
     }
 }
