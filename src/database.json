@@ -1,46 +1,55 @@
 {
-    "duahau": {
-        "truongthanh": "./img/duahau/truongthanh.png",
-        "hat": "./img/duahau/hat.png",
-        "caynon": "./img/duahau/caynon.png",
-        "thoigiantruongthanh": "10:00",
-        "thoigianthanhcaynon": "3:00",
-        "giatien": 3000,
-        "giathuhoach": 5000
-    },
     "cachua": {
-        "truongthanh": "./img/duahau/truongthanh.png",
-        "hat": "./img/duahau/hat.png",
-        "caynon": "./img/duahau/caynon.png",
-        "thoigiantruongthanh": "10:00",
-        "thoigianthanhcaynon": "3:00",
-        "giatien": 3000,
-        "giathuhoach": 5000
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/Cachua.png?alt=media&token=5e4d6d97-5c7e-42dd-af2d-87c84b59e048",
+        "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
+        "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
+        "thoigiantruongthanh": 10000,
+        "thoigianthanhcaynon": 3000,
+        "giatien": 1000,
+        "giathuhoach": 2000
     },
     "carot": {
-        "truongthanh": "./img/duahau/truongthanh.png",
-        "hat": "./img/duahau/hat.png",
-        "caynon": "./img/duahau/caynon.png",
-        "thoigiantruongthanh": "10:00",
-        "thoigianthanhcaynon": "3:00",
-        "giatien": 3000,
-        "giathuhoach": 5000
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/Carott.png?alt=media&token=afd0b0c4-5c43-478f-b60d-a9e546a944fc",
+        "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
+        "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
+        "thoigiantruongthanh": 10000,
+        "thoigianthanhcaynon": 2000,
+        "giatien": 1200,
+        "giathuhoach": 2200
     },
-    "khom": {
-        "truongthanh": "./img/duahau/truongthanh.png",
-        "hat": "./img/duahau/hat.png",
-        "caynon": "./img/duahau/caynon.png",
-        "thoigiantruongthanh": "10:00",
-        "thoigianthanhcaynon": "3:00",
-        "giatien": 3000,
-        "giathuhoach": 5000
+    "ngo": {
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/caybap.png?alt=media&token=375f2666-949d-44f8-b31e-b2989584e29d",
+        "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
+        "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
+        "thoigiantruongthanh": 12000,
+        "thoigianthanhcaynon": 3000,
+        "giatien": 1500,
+        "giathuhoach": 3000
     },
     "huongduong": {
-        "truongthanh": "./img/duahau/truongthanh.png",
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/HoaHD.png?alt=media&token=c8f583d6-a675-4dfb-a43d-82e7edc92237",
+        "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
+        "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
+        "thoigiantruongthanh": 14000,
+        "thoigianthanhcaynon": 4000,
+        "giatien": 2000,
+        "giathuhoach": 3500
+    },
+    "khom": {
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/khom.png?alt=media&token=447b5e59-dae2-4656-b4a0-5cbabb806012",
+        "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
+        "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
+        "thoigiantruongthanh": 15000,
+        "thoigianthanhcaynon": 5000,
+        "giatien": 1700,
+        "giathuhoach": 3200
+    },
+    "hoahong": {
+        "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hoahong.png?alt=media&token=fbae00ff-8d62-4208-8a34-84a70bb8938e",
         "hat": "./img/duahau/hat.png",
         "caynon": "./img/duahau/caynon.png",
-        "thoigiantruongthanh": "10:00",
-        "thoigianthanhcaynon": "3:00",
+        "thoigiantruongthanh": 15000,
+        "thoigianthanhcaynon": 5000,
         "giatien": 3000,
         "giathuhoach": 5000
     }
