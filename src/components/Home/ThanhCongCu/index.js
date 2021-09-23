@@ -1,3 +1,4 @@
+import MoneyTools from './MoneyTools'
 import SeedTools from './SeedTools'
 
 const ThanhCongCu = () => {
@@ -5,6 +6,7 @@ const ThanhCongCu = () => {
         <div className="cong-cu">
             <img src={require("../../../img/thanhcongcudacat.png").default} className="img-fluid" alt="logo" />
             <SeedTools />
+            <MoneyTools />
         </div>
     )
 }

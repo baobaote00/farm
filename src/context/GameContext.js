@@ -1,5 +1,6 @@
-import { createContext, useContext, useReducer } from "react";
+import { createContext, useContext, useEffect, useReducer } from "react";
 import reducers from './Reducers';
+import { ACTIONS } from "./Actions";
 
 export const GameContext = createContext();
 
@@ -17,6 +18,10 @@ const GameContextProvider = ({ children }) => {
     const [state, dispatch] = useReducer(reducers, initialState);
 
     const { ruong, manThu, tien } = state
+
+    useEffect(() => {
+        dispatch({ type: ACTIONS.TIEN, payload: man[manThu].tienbandau })
+    }, [])
 
     const value = {
         state,

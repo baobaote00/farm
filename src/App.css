@@ -25,14 +25,14 @@
     width: 16.66667%;
 }
 
-.day-ruong{
+.day-ruong {
     width: 100%;
     height: 33.333334%;
     display: flex;
     flex-direction: row;
 }
 
-.o-ruong{
+.o-ruong {
     width: 16.666667%;
     height: 33.333334%;
     justify-content: center;
@@ -41,14 +41,14 @@
     position: relative;
 }
 
-.da-tuoi{
+.da-tuoi {
     width: 100%;
     height: 100%;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.4);
 }
 
-.cay{
+.cay {
     position: absolute;
     top: 0;
     left: 0;
@@ -59,13 +59,13 @@
     flex-wrap: wrap;
 }
 
-.cai-cay{
+.cai-cay {
     width: 75%;
     height: 75%;
     position: relative;
 }
 
-.cong-cu{
+.cong-cu {
     width: 100%;
     top: 0;
     left: 0;
@@ -73,13 +73,13 @@
     position: absolute;
 }
 
-.seed-tool{
+.seed-tool {
     width: 25%;
     height: 100%;
     position: relative;
 }
 
-.seed-tools{
+.seed-tools {
     display: flex;
     top: 2%;
     left: 10.8%;
@@ -89,24 +89,63 @@
     justify-content: space-between;
 }
 
-.seed-img{
+.seed-img {
     top: 25.555%;
     left: 14.5%;
     position: absolute;
-    width:  74%;
+    width: 74%;
     height: 55.5%;
 }
 
-.ten-hat{
+.ten-hat {
     display: flex;
     justify-content: center;
-    margin-top: -4%;
 }
 
-.gia-tien{
+.gia-tien {
     bottom: 0;
     width: 100%;
     position: absolute;
     display: flex;
     justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+.money-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22%;
+    height: 100%;
+}
+
+.money-tool__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+}
+
+.money-tool__monney {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52%;
+    height: 73%;
+}
+
+.money-tool__monney .score,
+.money-tool__monney .money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 30px;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }

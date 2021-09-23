@@ -7,6 +7,11 @@ const reducers = (state, action) => {
         ...state,
         ruong: action.payload,
       };
+    case ACTIONS.TIEN:
+      return {
+        ...state,
+        tien: action.payload
+      }
     default:
       return state;
   }
