@@ -14,10 +14,10 @@ const GameContextProvider = ({ children }) => {
 
     const { cay, man } = db
 
-    const initialState = { ruong: new Array(18), manThu: 0, tien: 0 };
+    const initialState = { ruong: new Array(18), manThu: 0, tien: 0, notify: "" };
     const [state, dispatch] = useReducer(reducers, initialState);
 
-    const { ruong, manThu, tien } = state
+    const { ruong, manThu, tien, notify } = state
 
     useEffect(() => {
         dispatch({ type: ACTIONS.TIEN, payload: man[manThu].tienbandau })
@@ -30,7 +30,8 @@ const GameContextProvider = ({ children }) => {
         tien,
         manThu,
         ruong,
-        dispatch
+        dispatch,
+        notify
     }
 
     return (

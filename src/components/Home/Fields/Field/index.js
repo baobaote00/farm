@@ -3,7 +3,7 @@ import { useGame } from '../../../../context/GameContext';
 
 const Field = ({ data, daTuoi, viTri }) => {
 
-    const { dispatch, ruong } = useGame()
+    const { dispatch, ruong, tien } = useGame()
 
     const allowDrop = (e) => {
         e.preventDefault();
@@ -19,7 +19,7 @@ const Field = ({ data, daTuoi, viTri }) => {
         const giatien = e.dataTransfer.getData("giatien")
         const giathuhoach = e.dataTransfer.getData("giathuhoach")
 
-        if (!(hat||truongthanh||caynon||thoigianthanhcaynon||giatien||thoigiantruongthanh||giathuhoach)) {
+        if (!(hat || truongthanh || caynon || thoigianthanhcaynon || giatien || thoigiantruongthanh || giathuhoach)) {
             return
         }
 
@@ -33,7 +33,7 @@ const Field = ({ data, daTuoi, viTri }) => {
             giathuhoach
         };
 
-        dispatch(trongCay(data1, viTri, ruong))
+        dispatch(trongCay(data1, viTri, ruong, dispatch, tien))
     }
 
     return (
