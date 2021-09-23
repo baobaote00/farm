@@ -11,15 +11,28 @@ const Field = ({ data, daTuoi, viTri }) => {
 
     const drop = (e) => {
         e.preventDefault();
+        const hat = e.dataTransfer.getData("hat")
+        const truongthanh = e.dataTransfer.getData("truongthanh")
+        const caynon = e.dataTransfer.getData("caynon")
+        const thoigiantruongthanh = e.dataTransfer.getData("thoigiantruongthanh")
+        const thoigianthanhcaynon = e.dataTransfer.getData("thoigianthanhcaynon")
+        const giatien = e.dataTransfer.getData("giatien")
+        const giathuhoach = e.dataTransfer.getData("giathuhoach")
+
+        if (!(hat||truongthanh||caynon||thoigianthanhcaynon||giatien||thoigiantruongthanh||giathuhoach)) {
+            return
+        }
+
         var data1 = {
-            hat: e.dataTransfer.getData("hat"),
-            truongthanh: e.dataTransfer.getData("truongthanh"),
-            caynon: e.dataTransfer.getData("caynon"),
-            thoigiantruongthanh: e.dataTransfer.getData("thoigiantruongthanh"),
-            thoigianthanhcaynon: e.dataTransfer.getData("thoigianthanhcaynon"),
-            giatien: e.dataTransfer.getData("giatien"),
-            giathuhoach: e.dataTransfer.getData("giathuhoach")
+            hat,
+            truongthanh,
+            caynon,
+            thoigianthanhcaynon,
+            thoigiantruongthanh,
+            giatien,
+            giathuhoach
         };
+
         dispatch(trongCay(data1, viTri, ruong))
     }
 
