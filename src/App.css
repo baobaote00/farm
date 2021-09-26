@@ -25,45 +25,47 @@
     width: 16.66667%;
 }
 
-.day-ruong{
+.day-ruong {
     width: 100%;
     height: 33.333334%;
     display: flex;
     flex-direction: row;
 }
 
-.o-ruong{
+.o-ruong {
     width: 16.666667%;
-    height: 100%;
+    height: 33.333334%;
     justify-content: center;
     align-items: center;
     display: flex;
     position: relative;
 }
 
-.da-tuoi{
+.da-tuoi {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.cay{
+.cay {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.cai-cay{
+.cai-cay {
     width: 75%;
     height: 75%;
     position: relative;
 }
 
-.cong-cu{
+.cong-cu {
     width: 100%;
     top: 0;
     left: 0;
@@ -71,24 +73,129 @@
     position: absolute;
 }
 
-.seed-tool{
-    width: 20%;
+.seed-tool {
+    width: 25%;
     height: 100%;
+    position: relative;
 }
 
-.seed-tools{
+.seed-tools {
     display: flex;
-    top: 20%;
-    left: 11.8888889%;
+    top: 2%;
+    left: 10.8%;
     position: absolute;
-    height: 38.6%;
-    width: 27.3%;
+    height: 70%;
+    width: 29.1%;
     justify-content: space-between;
 }
 
-.seed-img{
-    top: 0;
+.seed-img {
+    top: 25.555%;
+    left: 14.5%;
     position: absolute;
-    width: 20%;
+    width: 74%;
+    height: 55.5%;
+}
+
+.ten-hat {
+    display: flex;
+    justify-content: center;
+}
+
+.gia-tien {
+    bottom: 0;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    font-family: 'VT323', monospace;
+}
+
+.money-tools {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 22%;
     height: 100%;
+}
+
+.money-tool__avatar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 48%;
+    height: 100%;
+}
+
+.money-tool__monney {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 52%;
+    height: 73%;
+}
+
+.money-tool__monney .score,
+.money-tool__monney .money {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    font-size: 30px;
+}
+
+.wrap {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.giut {
+    animation: shake 0.5s;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-2deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(3deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(2deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-3deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-2deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(3deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-2deg);
+    }
 }
