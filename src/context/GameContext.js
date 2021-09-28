@@ -21,7 +21,7 @@ const GameContextProvider = ({ children }) => {
 
     useEffect(() => {
         dispatch({ type: ACTIONS.TIEN, payload: man[manThu].tienbandau })
-    }, [])
+    }, [man, manThu])
 
     const value = {
         state,

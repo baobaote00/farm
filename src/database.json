@@ -4,8 +4,8 @@
             "truongthanh": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/Cachua.png?alt=media&token=5e4d6d97-5c7e-42dd-af2d-87c84b59e048",
             "hat": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/hat.png?alt=media&token=bd2b4522-067c-48f6-95a3-122591e0710c",
             "caynon": "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/mamcaynon.png?alt=media&token=a328ff31-257a-4717-8690-2e7a6b9645bc",
-            "thoigiantruongthanh": 10000,
-            "thoigianthanhcaynon": 3000,
+            "thoigiantruongthanh": 80,
+            "thoigianthanhcaynon": 50,
             "giatien": 1000,
             "giathuhoach": 2000,
             "ten": "Cà chua"
