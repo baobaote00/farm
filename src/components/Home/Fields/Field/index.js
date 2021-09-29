@@ -40,7 +40,7 @@ const Field = ({ data, daTuoi, viTri }) => {
 
     return (
         <div className="o-ruong" onDragOver={allowDrop} onDrop={drop}>
-            {daTuoi && <div className="da-tuoi" />}
+            {daTuoi && <div className="da-tuoi" />}{/*tưới cây*/}
             {data && <img src={data.thanhCayTruongThanh ? data.truongthanh : data.thanhCayNon ? data.caynon : data.hat} className="cai-cay" alt="logo" />}
             {data && !data.thanhCayTruongThanh && <ProgressBarAutoLoad data={data} viTri={viTri} />}
         </div>
