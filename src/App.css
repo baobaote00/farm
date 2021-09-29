@@ -73,6 +73,22 @@
     position: absolute;
 }
 
+.harvesting-tools{
+    position: absolute;
+    height: 70.5%;
+    width: 29.2%;
+    display: flex;
+    top: 2%;
+    left: 45.5%;
+    flex-direction: row-reverse;
+}
+
+.harvesting-tool{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
 .seed-tool {
     width: 25%;
     height: 100%;
@@ -100,10 +116,12 @@
 .ten-hat {
     display: flex;
     justify-content: center;
+    margin-top: -5%;
 }
 
 .gia-tien {
     bottom: 0;
+    margin-bottom: -4%;
     width: 100%;
     position: absolute;
     display: flex;
@@ -125,6 +143,16 @@
     left: 0;
     width: 48%;
     height: 100%;
+}
+
+.money-to-next-level{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .money-tool__monney {

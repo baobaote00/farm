@@ -12,6 +12,19 @@ const reducers = (state, action) => {
         ...state,
         tien: action.payload
       }
+    case ACTIONS.TIENQUAMAN:
+      return {
+        ...state,
+        tienQuaMan: action.payload
+      }
+    case ACTIONS.QUAMAN:
+      return {
+        ...state,
+        manThu: state.manThu + 1,
+        tien: state.level[state.manThu + 1].tienbandau,
+        tienQuaMan: state.level[state.manThu + 1].tienquaman,
+        ruong: new Array(18)
+      }
     case ACTIONS.NOTIFY:
       return {
         ...state,
