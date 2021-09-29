@@ -12,6 +12,11 @@ const reducers = (state, action) => {
         ...state,
         tien: action.payload
       }
+    case ACTIONS.TIENQUAMAN:
+      return {
+        ...state,
+        tienQuaMan: action.payload
+      }
     case ACTIONS.NOTIFY:
       return {
         ...state,

@@ -100,10 +100,12 @@
 .ten-hat {
     display: flex;
     justify-content: center;
+    margin-top: -5%;
 }
 
 .gia-tien {
     bottom: 0;
+    margin-bottom: -4%;
     width: 100%;
     position: absolute;
     display: flex;
@@ -125,6 +127,16 @@
     left: 0;
     width: 48%;
     height: 100%;
+}
+
+.money-to-next-level{
+    position: absolute;
+    bottom: 10%;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .money-tool__monney {

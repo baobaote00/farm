@@ -2,6 +2,7 @@ export const ACTIONS = {
     TRONGCAY: 'TRONGCAY',
     TIEN: 'TIEN',
     NOTIFY: 'NOTIFY',
+    TIENQUAMAN: 'TIENQUAMAN'
 }
 export const trongCay = (data, viTri, ruong, dispatch, tien) => {
     let today = new Date(),
