@@ -1,6 +1,8 @@
 import { trongCay } from '../../../../context/Actions';
 import { useGame } from '../../../../context/GameContext';
 
+import ProgressBarAutoLoad from './ProgressBarAutoLoad';
+
 const Field = ({ data, daTuoi, viTri }) => {
 
     const { dispatch, ruong, tien } = useGame()
@@ -39,7 +41,8 @@ const Field = ({ data, daTuoi, viTri }) => {
     return (
         <div className="o-ruong" onDragOver={allowDrop} onDrop={drop}>
             {daTuoi && <div className="da-tuoi" />}
-            {data && <img src={data.truongthanh} className="cai-cay" alt="logo" />}
+            {data && <img src={data.thanhCayTruongThanh ? data.truongthanh : data.thanhCayNon ? data.caynon : data.hat} className="cai-cay" alt="logo" />}
+            {data && !data.thanhCayTruongThanh && <ProgressBarAutoLoad data={data} viTri={viTri} />}
         </div>
     )
 }
