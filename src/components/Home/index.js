@@ -5,7 +5,7 @@ import { useEffect } from 'react';
 import { ACTIONS } from '../../context/Actions';
 import { ToastContainer, toast } from 'react-toastify';
 
-const Home = ({ children }) => {
+const Home = () => {
     const { notify, dispatch } = useGame()
 
     useEffect(() => {
