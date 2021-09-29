@@ -14,6 +14,13 @@ const ProgressBarAutoLoad = ({ data, viTri }) => {
     useEffect(() => {
         if (ruong[viTri].daTinhGio) {
             if (!ruong[viTri].thanhCayTruongThanh) {
+                if (ruong[viTri].soLanThuHoach > 0) {
+                    countInterval.current = setInterval(() => {
+                        setDone((new Date().getTime() - data.lanThuHoachGanNhat) / data.thoigiantruongthanh)
+                    }, 500);
+                    return
+                }
+
                 if (ruong[viTri].thanhCayNon) {
                     countInterval.current = setInterval(() => {
                         setDone((new Date().getTime() - data.ngayTrong - data.thoigianthanhcaynon * 100) / data.thoigiantruongthanh)
@@ -37,6 +44,7 @@ const ProgressBarAutoLoad = ({ data, viTri }) => {
         } else if (done > 100 && ruong[viTri].daTinhGio && !ruong[viTri].thanhCayTruongThanh) {
             dispatch(thanhCayTruongThanh(viTri, ruong));
             dispatch(tinhGio(viTri, ruong))
+            setDone(0)
         }
     }, [done, dispatch, viTri, ruong])
 

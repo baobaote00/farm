@@ -6,7 +6,7 @@ const SeedTools = () => {
 
     return (
         <div className="seed-tools">
-            {man[manThu+4].loaicay.map((e, k) =>
+            {man[manThu].loaicay.map((e, k) =>
                 (cay[e] ? <Seed key={k} data={cay[e]} /> : <Seed key={k} />)
             )}
         </div>

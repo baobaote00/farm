@@ -14,7 +14,7 @@ const GameContextProvider = ({ children }) => {
 
     const { cay, man } = db
 
-    const initialState = { ruong: new Array(18), manThu: 0, tien: 0, notify: "", tienQuaMan: 0 };
+    const initialState = { ruong: new Array(18), manThu: 0, tien: 0, notify: "", tienQuaMan: 0, level: man };
     const [state, dispatch] = useReducer(reducers, initialState);
 
     const { ruong, manThu, tien, notify, tienQuaMan } = state

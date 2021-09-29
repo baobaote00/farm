@@ -1,11 +1,11 @@
-import { trongCay } from '../../../../context/Actions';
+import { trongCay, thuHoachCay } from '../../../../context/Actions';
 import { useGame } from '../../../../context/GameContext';
 
 import ProgressBarAutoLoad from './ProgressBarAutoLoad';
 
 const Field = ({ data, daTuoi, viTri }) => {
 
-    const { dispatch, ruong, tien } = useGame()
+    const { dispatch, ruong, tien,tienQuaMan } = useGame()
 
     const allowDrop = (e) => {
         e.preventDefault();
@@ -20,6 +20,15 @@ const Field = ({ data, daTuoi, viTri }) => {
         const thoigianthanhcaynon = e.dataTransfer.getData("thoigianthanhcaynon")
         const giatien = e.dataTransfer.getData("giatien")
         const giathuhoach = e.dataTransfer.getData("giathuhoach")
+        const thuHoach = e.dataTransfer.getData("thuHoach")
+
+        if (thuHoach) {
+            if (data === undefined) {
+                return
+            }
+            dispatch(thuHoachCay(viTri, ruong, dispatch, tien,tienQuaMan))
+            return
+        }
 
         if (!(hat || truongthanh || caynon || thoigianthanhcaynon || giatien || thoigiantruongthanh || giathuhoach)) {
             return

@@ -73,6 +73,22 @@
     position: absolute;
 }
 
+.harvesting-tools{
+    position: absolute;
+    height: 70.5%;
+    width: 29.2%;
+    display: flex;
+    top: 2%;
+    left: 45.5%;
+    flex-direction: row-reverse;
+}
+
+.harvesting-tool{
+    width: 25%;
+    height: 100%;
+    position: relative;
+}
+
 .seed-tool {
     width: 25%;
     height: 100%;
