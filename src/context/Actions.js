@@ -84,6 +84,12 @@ export const thuHoachCay = (viTri, ruong, dispatch, tien, tienQuaMan) => {
     }
 
     if (parseInt(tien) + parseInt(ruong[viTri].giathuhoach) > tienQuaMan) {
+        dispatch({
+            type: ACTIONS.NOTIFY, payload: {
+                type: "success",
+                notify: "Bạn đã qua màn!!"
+            }
+        })
         return { type: ACTIONS.QUAMAN, payload: true }
     }
 

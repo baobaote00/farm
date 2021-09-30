@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react'
 import ProgressBar from 'react-bootstrap/ProgressBar'
-import { useGame } from '../../../../../context/GameContext';
-import { thanhCayNon, thanhCayTruongThanh, tinhGio } from './../../../../../context/Actions';
+import { useGame } from 'context/GameContext';
+import { thanhCayNon, thanhCayTruongThanh, tinhGio } from 'context/Actions';
 
 const ProgressBarAutoLoad = ({ data, viTri }) => {
 
@@ -35,7 +35,7 @@ const ProgressBarAutoLoad = ({ data, viTri }) => {
         return () => {
             clearInterval(countInterval.current)
         }
-    }, [ruong, viTri, dispatch, data.ngayTrong, data.thoigianthanhcaynon, data.thoigiantruongthanh])
+    }, [ruong, viTri, dispatch, data.ngayTrong, data.thoigianthanhcaynon, data.thoigiantruongthanh, data.lanThuHoachGanNhat])
 
     useEffect(() => {
         if (done > 100 && ruong[viTri].daTinhGio && !ruong[viTri].thanhCayNon) {

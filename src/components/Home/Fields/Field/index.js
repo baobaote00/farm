@@ -1,5 +1,5 @@
-import { trongCay, thuHoachCay } from '../../../../context/Actions';
-import { useGame } from '../../../../context/GameContext';
+import { trongCay, thuHoachCay } from 'context/Actions';
+import { useGame } from 'context/GameContext';
 
 import ProgressBarAutoLoad from './ProgressBarAutoLoad';
 

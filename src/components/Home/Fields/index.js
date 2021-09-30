@@ -1,6 +1,6 @@
 import ruongImg from '../../../img/ruong.png';
 import Field from './Field';
-import { useGame } from './../../../context/GameContext';
+import { useGame } from 'context/GameContext';
 
 const Fields = () => {
     const { ruong } = useGame()

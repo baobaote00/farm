@@ -1,9 +1,10 @@
-import { useGame } from '../../context/GameContext'
+import { useGame } from 'context/GameContext'
 import Fields from './Fields'
 import ThanhCongCu from './ThanhCongCu'
 import { useEffect } from 'react';
-import { ACTIONS } from '../../context/Actions';
+import { ACTIONS } from 'context/Actions';
 import { ToastContainer, toast } from 'react-toastify';
+import ThanhCongCuBottom from './ThanhCongCuBottom';
 
 const Home = () => {
     const { notify, dispatch } = useGame()
@@ -40,6 +41,7 @@ const Home = () => {
             <img src={background} className="img-fluid" alt="logo" />
             <ThanhCongCu />
             <Fields />
+            <ThanhCongCuBottom />
             <ToastContainer
                 draggable
                 pauseOnHover

@@ -1,4 +1,4 @@
-import { useGame } from '../../../../context/GameContext'
+import { useGame } from 'context/GameContext'
 import Seed from './Seed'
 
 const SeedTools = () => {
