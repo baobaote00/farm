@@ -7,52 +7,60 @@ const reducers = (state, action) => {
   const db = getDatabase()
   switch (action.type) {
     case ACTIONS.TRONGCAY:
-      set(ref(db, state.user.uid), {
-        ...state,
-        level:null,
-        user: null,
-        notify: null,
-        ruong: action.payload
-      });
+      if (state.user) {
+        set(ref(db, state.user.uid ? state.user.uid : state.user.user.uid), {
+          ...state,
+          level: null,
+          user: null,
+          notify: null,
+          ruong: action.payload
+        });
+      }
       return {
         ...state,
         ruong: action.payload,
       };
     case ACTIONS.TIEN:
-      set(ref(db, state.user.uid), {
-        ...state,
-        level:null,
-        user: null,
-        notify: null,
-        tien: action.payload
-      });
+      if (state.user) {
+        set(ref(db, state.user.uid ? state.user.uid : state.user.user.uid), {
+          ...state,
+          level: null,
+          user: null,
+          notify: null,
+          tien: action.payload
+        });
+      }
       return {
         ...state,
         tien: action.payload
       }
     case ACTIONS.TIENQUAMAN:
-      set(ref(db, state.user.uid), {
-        ...state,
-        level:null,
-        user: null,
-        notify: null,
-        tienQuaMan: action.payload
-      });
+      if (state.user) {
+        set(ref(db, state.user.uid ? state.user.uid : state.user.user.uid), {
+          ...state,
+          level: null,
+          user: null,
+          notify: null,
+          tienQuaMan: action.payload
+        });
+      }
       return {
         ...state,
         tienQuaMan: action.payload
       }
     case ACTIONS.QUAMAN:
-      set(ref(db, state.user.uid), {
-        ...state,
-        level:null,
-        user: null,
-        notify: null,
-        manThu: state.manThu + 1,
-        tien: state.level[state.manThu + 1].tienbandau,
-        tienQuaMan: state.level[state.manThu + 1].tienquaman,
-        ruong: new Array(18)
-      });
+      if (state.user) {
+        set(ref(db, state.user.uid ? state.user.uid : state.user.user.uid), {
+          ...state,
+          level: null,
+          user: null,
+          notify: null,
+          manThu: state.manThu + 1,
+          tien: state.level[state.manThu + 1].tienbandau,
+          tienQuaMan: state.level[state.manThu + 1].tienquaman,
+          ruong: new Array(18)
+        });
+      }
       return {
         ...state,
         manThu: state.manThu + 1,

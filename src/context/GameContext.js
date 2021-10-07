@@ -18,7 +18,7 @@ const GameContextProvider = ({ children }) => {
 
     useEffect(() => {
         const setUserCurrent = setTimeout(() => {
-            console.log(auth.currentUser.uid);
+            console.log(auth.currentUser);
             if (!auth.currentUser) {
                 signInAnonymously(auth)
                     .then((user) => {
@@ -71,6 +71,9 @@ const GameContextProvider = ({ children }) => {
     useEffect(() => {
         const setTienTimeout = setTimeout(() => {
             if (user) {
+                console.log(user.uid);
+            }
+            if (user.uid) {
                 get(child(dbRef, user.uid)).then((snapshot) => {
                     if (snapshot.exists()) {
                         dispatch({ type: ACTIONS.TIEN, payload: snapshot.val().tien })
@@ -97,7 +100,7 @@ const GameContextProvider = ({ children }) => {
                 dispatch({ type: ACTIONS.TIENQUAMAN, payload: man && man[manThu].tienquaman })
             }
             dispatch({ type: ACTIONS.LEVEL, payload: man && man })
-        }, 1500);
+        }, 2000);
         return () => {
             clearTimeout(setTienTimeout)
         }
