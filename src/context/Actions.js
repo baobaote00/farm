@@ -3,7 +3,8 @@ export const ACTIONS = {
     TIEN: 'TIEN',
     NOTIFY: 'NOTIFY',
     TIENQUAMAN: 'TIENQUAMAN',
-    QUAMAN: 'QUAMAN'
+    QUAMAN: 'QUAMAN',
+    USER: "USER"
 }
 export const trongCay = (data, viTri, ruong, dispatch, tien) => {
     let today = new Date(),

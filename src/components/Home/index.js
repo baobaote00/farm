@@ -9,6 +9,7 @@ import ThanhCongCuBottom from './ThanhCongCuBottom';
 const Home = () => {
     const { notify, dispatch } = useGame()
 
+
     useEffect(() => {
         if (notify !== "") {
             switch (notify.type) {
@@ -35,7 +36,7 @@ const Home = () => {
     }, [notify, dispatch])
 
     let background = "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/bg.png?alt=media&token=82686c14-7d32-4d17-8192-9d4e569371cf"
-    // let background = "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/bgnew.png?alt=media&token=15e51756-632d-4f47-a353-831a118daea2"
+    // let background = "https://firebasestorage.googleapis.com/v0/b/farm-e97ce.appspot.com/o/bgg.png?alt=media&token=27a45bd8-78a1-4623-afc1-143711bb45ff"
     return (
         <div className="App">
             <img src={background} className="img-fluid" alt="logo" />
